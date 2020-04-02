@@ -3,7 +3,7 @@ import sys
 import difflib
 
 from constants import GeneralConstants, StatementConstants
-from utils import DictionaryUtils
+from dictionary_utils import DictionaryUtils
 
 
 class DictionaryLogic:
@@ -45,3 +45,4 @@ class DictionaryLogic:
             if user_input.upper() == GeneralConstants.POSITIVE_CONFIRMATION_INPUT:
                 result_statement = self.translate_word(self, word_first_match)
         return result_statement
+

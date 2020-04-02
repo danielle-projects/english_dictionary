@@ -16,7 +16,6 @@ class DictionaryUtils:
             logging.warning('cannot open', filepath)
             sys.exit(GeneralConstants.SYSTEM_EXIT_CODE)
         except ValueError as e:
-            dictionary_data.close()
             logging.warning('cannot convert Json to dictionary', e)
             sys.exit(GeneralConstants.SYSTEM_EXIT_CODE)
         return dictionary_data_dict
@@ -25,4 +24,5 @@ class DictionaryUtils:
     def get_user_input(statement_for_user):
         user_input = input(statement_for_user)
         return user_input
+
 
