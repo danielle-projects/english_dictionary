@@ -1,4 +1,4 @@
-from logic import DictionaryLogic
+from dictionary_logic import DictionaryLogic
 
 
 if __name__ == '__main__':
