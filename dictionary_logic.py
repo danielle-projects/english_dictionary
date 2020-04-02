@@ -7,9 +7,9 @@ from utils import DictionaryUtils
 
 
 class DictionaryLogic:
-    def __init__(self):
-        self.dictionary_words_data = DictionaryUtils.load_dictionary_data()
-        self.dictionary_file_path = GeneralConstants.DICTIONARY_JSON_FILEPATH
+
+    def __init__(self, filepath):
+        self.dictionary_words_data = DictionaryUtils.load_dictionary_data(filepath)
 
     def process_word_translation(self):
         word = DictionaryUtils.get_user_input(StatementConstants.INITIAL_STATEMENT)
